@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        h5 {text-align: center;}
+        h6 {text-align: center;}
+        body {text-align: center;}
+        </style>
+        </head>
+    <title>Patriots Breeze's Blog</title>
+    <body>
+        <div>
+            <h1><strong>Patriots Breeze's Blog</strong></h1>
+        </div>
+        <div>
+            <p><em>By: Patriots Breeze</em></p>
+        </div>
+        <div>
+            <p>Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+</script>
+        </div>
+    </body>
+    <body>
+        <div>
+            <h5>How to code your first discord.js bot!</h5>
+            <p><em>for linux</em></p>
+        </div>
+        <div>
+            <h6>1. Install Visual Studio Code</h6>
+            <p>- Run: sudo apt-get install code</p>
+            <p>- Run: sudo apt update</p>
+            <p>- Run: code .</p>
+            <p>After running these commands in terminal, Visual Studio Code should be updated.</p>
+        </div>
+        <div>
+            <h6>2. Install node.js</h6>
+            <p>- Run: sudo apt-get install nodejs</p>
+            <p>- Run: sudo apt update</p>
+            <p>Node.js should be installed now.</p>
+        </div>
+        <div>
+            <h6>3. Creating projects</h6>
+            <p>- Press on "file" on the top left of Visual Studio Code</p>
+            <p>- Then, press on "Open Folder"</p>
+            <p>- Name it whatever you'd like for the folder, it doesn't really matter too much.</p>
+            <p>- Press the create file button and name the file, "index.js"</p>
+            <p>- Now, create another file named: "config.json"</p>
+        </div>
+        <div>
+            <h6>4. Installing dependencies</h6>
+            <p>- Press on Terminal, then "New Terminal"</p>
+            <p>- Run: npm i discord.js --save</p>
+            <p>- Run: npm init</p>
+            <p>- Keep pressing enter after this until you get back to the default text.</p>
+        </div>
+        <div>
+            <h6>5. Creating your bot in discord</h6>
+            <p>- Open up: https://discord.com/developers</p>
+            <p>- Press "create application"</p>
+            <p>- After doing it, create a bot.</p>
+            <p>- Invite that bot by going to the OAUTH page</p>
+            <p>Here you will select "bot" and copy the invite link</p>
+            <p>After you copy it, paste it into your browser and select a test server to put it in. There! The bot has been created!</p>
+        </div>
+        <div>
+            <h6>6. Putting the base commands into your bot</h6>
+            <p>- Put this code into the "index.js" file:</p>
+            <p>const Discord = require('discord.js');<br>
+                const { prefix, token } = require('./config.json');<br>
+                <br>
+                const client = new Discord.Client();<br>
+                <br>
+                client.once('ready', () => {<br>
+                    console.log('Ready!');<br>
+                });<br>
+                <br>
+                client.login(token);</p>
+                - Then, put this file in the "config.json" file:<br>
+                {<br>
+                    "prefix": "-",<br>
+                    "token": "PLACE YOUR TOKEN HERE"<br>
+                }<br>
+                - Make the prefix whatever you want it to be and put your bot token in the config.json file.
+        </div>
+        <div>
+            <h6>7. Starting the bot</h6>
+            <p>Open up terminal (again) and run: node .</p>
+            <p>Go back to your server and you should see the bot online!</p>
+        </div>
+    </body>
+    </div>
+    
+</html>
